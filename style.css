@@ -1,0 +1,209 @@
+html, body {
+    height: 99%;
+    min-height: 99%;
+}
+body {
+    padding: 0;
+    margin: 0;
+    background: url(https://1.bp.blogspot.com/-B3ehzJueOvM/XHKV0vZLYWI/AAAAAAAAC0Y/LwEDcZbb8Lkd1pMFNllCP8x5F2KOKnD3wCKgBGAs/w1080-h1920-c/black-red-abstract-polygon-3d-4k-45.jpg) no-repeat center center;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+}
+.intro {
+    text-align: center;
+    height: 99%;
+    min-height: 99%;
+    position: relative;
+}
+.intro p {
+    color: #fefefe;
+    font-weight: bold;
+    font-family: 'Roboto', sans-serif;
+    font-size: 30px;
+    padding-top: 10px;
+    text-transform: uppercase;
+    text-shadow: 0 2px 5px rgba(0, 0, 0, .6)
+}
+.scrolldown {
+    border-style: dashed;
+    border-color: transparent;
+    border-width: 0.53em;
+    display: -moz-inline-box;
+    display: inline-block;
+    /* Use font-size to control the size of the arrow. */
+    font-size: 20px;
+    height: 0;
+    line-height: 0;
+    position: absolute;
+    bottom: 20px;
+    left: 50%;
+    width: 0;
+    border-top-width: 1em;
+    border-top-style: solid;
+    border-top-color: #eee;
+}
+.content {
+    padding: 20px;
+    background: #eee;
+}
+p {
+    padding-bottom: 20px;
+    font-size: 20px;
+    line-height: 1.5;
+}
+nav {
+    position: absolute;
+    top: 0;
+    right: 0;
+    z-index: 9999;
+    -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+}
+nav .menu {
+    position: fixed;
+    padding: 14px 0;
+    /*height and padding(top/bottom) add up to 60px(same as width)*/
+    height: 32px;
+    width: 60px;
+    top: 20px;
+    right: 20px;
+    border-radius: 50%;
+    z-index: 999;
+    cursor: pointer;
+    background: rgb(255, 255, 255);
+    background: -moz-linear-gradient(top, rgba(255, 255, 255, 1) 0%, rgba(229, 229, 229, 1) 100%);
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, rgba(255, 255, 255, 1)), color-stop(100%, rgba(229, 229, 229, 1)));
+    background: -webkit-linear-gradient(top, rgba(255, 255, 255, 1) 0%, rgba(229, 229, 229, 1) 100%);
+    background: -o-linear-gradient(top, rgba(255, 255, 255, 1) 0%, rgba(229, 229, 229, 1) 100%);
+    background: -ms-linear-gradient(top, rgba(255, 255, 255, 1) 0%, rgba(229, 229, 229, 1) 100%);
+    background: linear-gradient(to bottom, rgba(255, 255, 255, 1) 0%, rgba(229, 229, 229, 1) 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#ffffff', endColorstr='#e5e5e5', GradientType=0);
+    box-shadow: 0px 0px 0px 2px rgba(0, 0, 0, .25);
+    -webkit-transition: all 300ms ease;
+    -moz-transition: all 300ms ease;
+    -ms-transition: all 300ms ease;
+    -o-transition: all 300ms ease;
+    transition: all 300ms ease;
+}
+nav .menu:hover {
+    -moz-transform: scale(1.1);
+    -webkit-transform: scale(1.1);
+    -o-transform: scale(1.1);
+    -ms-transform: scale(1.1);
+    transform: scale(1.1);
+}
+nav .menu:active {
+    -moz-transform: scale(.9);
+    -webkit-transform: scale(.9);
+    -o-transform: scale(.9);
+    -ms-transform: scale(.9);
+    transform: scale(.9);
+}
+nav .menu .bar {
+    height: 4px;
+    width: 30px;
+    border-radius: 2px;
+    margin: 5px auto;
+    display:block;
+    z-index: 9999;
+    background: #aaa;
+    box-shadow: inset 0 1px 2px rgba(0, 0, 0, .5);
+    -webkit-transition: all 300ms ease;
+    -moz-transition: all 300ms ease;
+    -ms-transition: all 300ms ease;
+    -o-transition: all 300ms ease;
+    transition: all 300ms ease;
+}
+nav .menu:hover > .bar {
+    background: rgba(100, 160, 255, 1);
+}
+nav .circle {
+    -moz-opacity: 1;
+    opacity: 1;
+    font-size: 20px;
+    color: #eee;
+    position: fixed;
+    top: -170px;
+    right: -170px;
+    display: block;
+    height: 400px;
+    width: 400px;
+    background: rgba(100, 100, 100, .9);
+    box-shadow: 0px 0px 0px 2px rgba(0, 0, 0, .5), inset 0 0 200px rgba(0, 0, 0, .5);
+    padding: 20px;
+    -webkit-transition: all 300ms ease;
+    -moz-transition: all 300ms ease;
+    -ms-transition: all 300ms ease;
+    -o-transition: all 300ms ease;
+    transition: all 300ms ease;
+    border-radius: 50%;
+    overflow:hidden !important;
+}
+nav .circle li {
+    list-style:none !important;
+    background: rgba(0, 0, 0, 0);
+}
+nav .circle li a {
+    -moz-opacity: 1;
+    opacity: 1;
+    position: absolute;
+    top: -80px;
+    left: 220px;
+    display:block;
+    width: 500px;
+    height: 300px;
+    background: rgba(50, 50, 50, .5);
+    box-shadow: inset 0 0 0 2px rgba(0, 0, 0, .1);
+    -webkit-transform-origin: 0% 100%;
+    -webkit-transition: all 300ms ease;
+    -moz-transition: all 300ms ease;
+    -ms-transition: all 300ms ease;
+    -o-transition: all 300ms ease;
+    transition: all 300ms ease;
+}
+nav .circle li a:hover {
+    background: rgba(255, 120, 20, 1) !important;
+}
+nav .circle li:first-child a {
+    -webkit-transform: rotate(-165deg) skewX(-50deg);
+}
+nav .circle li:nth-child(2) a {
+    -webkit-transform: rotate(-205deg) skewX(-50deg);
+}
+nav .circle li:nth-child(3) a {
+    -webkit-transform: rotate(-245deg) skewX(-50deg);
+}
+nav .circle li:nth-child(4) a {
+    -webkit-transform: rotate(-285deg) skewX(-50deg);
+    pointer-events: none;
+}
+nav .circle li:nth-child(5) a {
+    -webkit-transform: rotate(-325deg) skewX(-50deg);
+    pointer-events: none;
+}
+nav .circle li:nth-child(6) a {
+    -webkit-transform: rotate(-45deg) skewX(-50deg);
+    pointer-events: none;
+}
+nav .circle li:nth-child(7) a {
+    -webkit-transform: rotate(-5deg) skewX(-50deg);
+    pointer-events: none;
+}
+nav .circle li:nth-child(8) a {
+    -webkit-transform: rotate(275deg) skewX(-50deg);
+    pointer-events: none;
+}
+nav .circle li:last-child a {
+    -webkit-transform: rotate(235deg) skewX(-50deg);
+    pointer-events: none;
+}
+nav .hidenav {
+    -moz-opacity: .5;
+    opacity: .5;
+    -moz-transform: scale(0.1) rotate(-60deg);
+    -webkit-transform: scale(0.1) rotate(-60deg);
+    -o-transform: scale(0.1) rotate(-60deg);
+    -ms-transform: scale(0.1) rotate(-60deg);
+    transform: scale(0.1) rotate(-60deg);
+}
